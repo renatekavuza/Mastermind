@@ -30,10 +30,11 @@ public class NumbersToGuess {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
+		int ten = 1;
+		int result = 0;
 		for (int i = 0; i < 4; i++) {
-			result = prime * result + numbers[i];
+			result += ten * numbers[i];
+			ten *= 10;
 		}
 		return result;
 	}
