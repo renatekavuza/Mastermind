@@ -46,8 +46,7 @@ public class NumbersToGuess {
 		nr4 = genNr4();
 	}
 
-	double number1ToGuess = Math.random() * 6 + 0.51;
-	int nr1ToGuess = (int) number1ToGuess;
+	int nr1ToGuess = 0;
 
 	public int genNr1() {
 		int nr1 = nr1ToGuess;
@@ -59,8 +58,7 @@ public class NumbersToGuess {
 		return nr1;
 	}
 
-	double number2ToGuess = Math.random() * 6 + 0.51;
-	int nr2ToGuess = (int) number2ToGuess;
+	int nr2ToGuess = 0;
 
 	public int genNr2() {
 		int nr2 = nr2ToGuess;
@@ -72,8 +70,7 @@ public class NumbersToGuess {
 		return nr2;
 	}
 
-	double number3ToGuess = Math.random() * 6 + 0.51;
-	int nr3ToGuess = (int) number3ToGuess;
+	int nr3ToGuess = 0;
 
 	public int genNr3() {
 		int nr3 = nr3ToGuess;
@@ -85,8 +82,7 @@ public class NumbersToGuess {
 		return nr3;
 	}
 
-	double number4ToGuess = Math.random() * 6 + 0.51;
-	int nr4ToGuess = (int) number4ToGuess;
+	int nr4ToGuess = 0;
 
 	public int genNr4() {
 		int nr4 = nr4ToGuess;
