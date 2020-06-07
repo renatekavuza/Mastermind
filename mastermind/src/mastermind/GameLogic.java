@@ -21,11 +21,14 @@ public class GameLogic {
 		holdNr4 = numbers.getNr4();
 		
 		int correctPosition = 0;
-		int correctNumber = 0;
+		int correctNumber;
 		int countGuess = 0;
 		
 		while(correctPosition<4) {
 		
+		correctPosition = 0;
+		correctNumber = 0;
+			
 		System.out.println("please enter the four digits with a comma and a space in between!");
 	//	System.in.read(guess1, guess2, guess3, guess4); scanner in java.utils. Scannner wantNumber = new scanner(system.in)
 		Scanner wantNumber = new Scanner(System.in);
