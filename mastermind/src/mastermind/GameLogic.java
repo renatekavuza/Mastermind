@@ -29,7 +29,7 @@ public class GameLogic {
 		correctPosition = 0;
 		correctNumber = 0;
 			
-		System.out.println("please enter the four digits with a comma and a space in between!");
+		System.out.println("please enter the four digits each followed by pressing enter!");
 	//	System.in.read(guess1, guess2, guess3, guess4); scanner in java.utils. Scannner wantNumber = new scanner(system.in)
 		Scanner wantNumber = new Scanner(System.in);
 		int guess1 = wantNumber.nextInt();
@@ -96,7 +96,7 @@ public class GameLogic {
 		System.out.println("Well done for guess Nr. " + countGuess + "! You may guess again.");
 		}
 		
-			System.out.println("full hit: I had chosen the numbers" + holdNr1 + "," + holdNr2 + "," + holdNr3 + "," + holdNr4 + "You have won this game with " + countGuess + "Guesses.");
+			System.out.println("Full hit: I had chosen the numbers " + holdNr1 + "," + holdNr2 + "," + holdNr3 + "," + holdNr4 + "! You have won this game with " + countGuess + " Guesses.");
 
 /*int nTest = 1;
 		while (nTest <= 1000) {
