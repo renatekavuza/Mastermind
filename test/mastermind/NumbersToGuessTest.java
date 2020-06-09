@@ -23,10 +23,8 @@ public class NumbersToGuessTest {
 	public void testNewNumbersToGuess_everyNumberIsDistinct() {
 		NumbersToGuess numbers = new NumbersToGuess();
 		for (int i = 0; i < 4; i++) {
-			if (i < 3) {
-				for (int j = i + 1; j < 4; j++) {
-					assertTrue(numbers.getNr(i) != numbers.getNr(j));
-				}
+			for (int j = i + 1; j < 4; j++) {
+				assertTrue(numbers.getNr(i) != numbers.getNr(j));
 			}
 		}
 	}
@@ -61,17 +59,16 @@ public class NumbersToGuessTest {
 		// assert that every possible combination has been generated (at least once)
 		long possibleCombinationsCount = factorial(6) / factorial(6 - 4);
 		assertEquals(possibleCombinationsCount, numbersMap.size());
-		// assert that every (possible) combination has been generated between 2500 + 3500 times
+		// assert that every (possible) combination has been generated between 2500 +
+		// 3500 times
 		for (Entry<NumbersToGuess, Integer> entry : numbersMap.entrySet()) {
 			assertEquals(3000.0, entry.getValue().doubleValue(), 500);
 		}
 	}
 
-	public double arithmeticMean(int... numbers)
-	{
+	public double arithmeticMean(int... numbers) {
 		long sum = 0;
-		for (int n : numbers)
-		{
+		for (int n : numbers) {
 			sum += n;
 		}
 		return sum / (double) numbers.length;
