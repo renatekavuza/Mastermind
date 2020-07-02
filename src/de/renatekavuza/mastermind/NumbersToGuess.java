@@ -1,4 +1,4 @@
-package mastermind;
+package de.renatekavuza.mastermind;
 
 public class NumbersToGuess {
 

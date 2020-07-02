@@ -1,19 +1,19 @@
-package mastermind;
+package de.renatekavuza.mastermind;
 
 public class Guess {
 	int guess1;
-	int	guess2;
+	int guess2;
 	int guess3;
 	int guess4;
 
 	public Guess(int guess1, int guess2, int guess3, int guess4) {
-		
+
 		this.guess1 = guess1;
 		this.guess2 = guess2;
 		this.guess3 = guess3;
 		this.guess4 = guess4;
 	}
-	
+
 	public int getGuess1() {
 		return guess1;
 	}
@@ -47,12 +47,11 @@ public class Guess {
 	}
 
 	public boolean compare(int a, int b) {
-		
-		if(a == b) {
-		return true;
-		}	
-		else return false;
-	}
-	
-}
 
+		if (a == b) {
+			return true;
+		} else
+			return false;
+	}
+
+}
