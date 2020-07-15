@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class GameLogic {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		System.out.println("M A S T E R M I N D");
-		System.out.println("In this game you have to guess the 4 numbers between 1 and 6, I have randomely chosen.");
+		System.out.println("In this game you have to guess the 4 numbers between 1 and 6, I have randomly chosen.");
 		System.out.println("Eaach number occurs only once.");
 
 		int holdNr1;
@@ -24,6 +24,8 @@ public class GameLogic {
 		int correctNumber;
 		int countGuess = 0;
 
+		Scanner wantNumber = new Scanner(System.in);
+
 		while (correctPosition < 4) {
 
 			correctPosition = 0;
@@ -32,7 +34,6 @@ public class GameLogic {
 			System.out.println("please enter the four digits each followed by pressing enter!");
 			// System.in.read(guess1, guess2, guess3, guess4); scanner in java.utils.
 			// Scannner wantNumber = new scanner(system.in)
-			Scanner wantNumber = new Scanner(System.in);
 			int guess1 = wantNumber.nextInt();
 			int guess2 = wantNumber.nextInt();
 			int guess3 = wantNumber.nextInt();
@@ -100,6 +101,8 @@ public class GameLogic {
 
 		System.out.println("Full hit: I had chosen the numbers " + holdNr1 + "," + holdNr2 + "," + holdNr3 + ","
 				+ holdNr4 + "! You have won this game with " + countGuess + " Guesses.");
+
+		wantNumber.close();
 
 		/*
 		 * int nTest = 1; while (nTest <= 1000) { NumbersToGuess numbers = new
